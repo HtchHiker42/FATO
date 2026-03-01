@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FATO Greek — Study Companion · Lessons 20–30</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- BACKGROUND TEXTURE -->
+<div class="bg-noise"></div>
+<div class="bg-vignette"></div>
+
+<!-- SIDEBAR NAV -->
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="logo-greek">Α→Ω</div>
+    <div class="logo-sub">Study Companion</div>
+    <div class="logo-lessons">Lessons 20–30</div>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#home" class="nav-link active" data-section="home">
+      <span class="nav-icon">⌂</span><span>Home</span></a></li>
+    <li><a href="#grammar" class="nav-link" data-section="grammar">
+      <span class="nav-icon">§</span><span>Grammar</span></a></li>
+    <li><a href="#vocab" class="nav-link" data-section="vocab">
+      <span class="nav-icon">λ</span><span>Vocabulary</span></a></li>
+    <li><a href="#flashcards" class="nav-link" data-section="flashcards">
+      <span class="nav-icon">◈</span><span>Flashcards</span></a></li>
+    <li><a href="#quiz" class="nav-link" data-section="quiz">
+      <span class="nav-icon">?</span><span>Quiz</span></a></li>
+    <li><a href="#paradigms" class="nav-link" data-section="paradigms">
+      <span class="nav-icon">π</span><span>Paradigms</span></a></li>
+    <li><a href="#principal" class="nav-link" data-section="principal">
+      <span class="nav-icon">∞</span><span>Principal Parts</span></a></li>
+  </ul>
+
+  <div class="sidebar-footer">
+    <div class="progress-label">Session Progress</div>
+    <div class="progress-bar-wrap"><div class="progress-bar" id="sessionProgress"></div></div>
+    <div class="progress-text" id="progressText">0% complete</div>
+  </div>
+</nav>
+
+<!-- HAMBURGER -->
+<button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+
+<!-- MAIN CONTENT -->
+<main class="main" id="main">
+
+  <!-- ── HOME ── -->
+  <section class="section active" id="home">
+    <div class="hero">
+      <div class="hero-ornament">✦ ✦ ✦</div>
+      <h1 class="hero-title">From Alpha to Omega</h1>
+      <p class="hero-subtitle">Ancient Greek Study Companion</p>
+      <p class="hero-lessons">Lessons XX – XXX · Perfect &amp; Pluperfect · Participles · Pronouns · Conditionals</p>
+      <div class="hero-quote">
+        <span class="greek-quote">γηράσκω δ' αἰεί πολλὰ διδασκόμενος</span>
+        <span class="quote-trans">"The older I grow, the more I learn." — Solon</span>
+      </div>
+    </div>
+
+    <div class="card-grid home-grid">
+      <div class="topic-card" data-goto="grammar">
+        <div class="card-icon">§</div>
+        <h3>Grammar</h3>
+        <p>Perfect &amp; pluperfect tenses, participles, relative pronouns, indirect questions, deponents, genitive absolute</p>
+        <div class="card-tag">11 lessons</div>
+      </div>
+      <div class="topic-card" data-goto="vocab">
+        <div class="card-icon">λ</div>
+        <h3>Vocabulary</h3>
+        <p>All new words from Lessons 20–30 with English meanings, part of speech, and etymology hints</p>
+        <div class="card-tag">70+ words</div>
+      </div>
+      <div class="topic-card" data-goto="flashcards">
+        <div class="card-icon">◈</div>
+        <h3>Flashcards</h3>
+        <p>Interactive flip-cards for vocabulary and grammar forms. Shuffle, filter by lesson, track progress</p>
+        <div class="card-tag">interactive</div>
+      </div>
+      <div class="topic-card" data-goto="quiz">
+        <div class="card-icon">?</div>
+        <h3>Quiz</h3>
+        <p>Multiple-choice and fill-in quizzes on grammar rules, vocab, and form recognition</p>
+        <div class="card-tag">test yourself</div>
+      </div>
+      <div class="topic-card" data-goto="paradigms">
+        <div class="card-icon">π</div>
+        <h3>Paradigm Tables</h3>
+        <p>Full conjugation and declension tables for perfect active/middle, participles, pronouns, and more</p>
+        <div class="card-tag">reference</div>
+      </div>
+      <div class="topic-card" data-goto="principal">
+        <div class="card-icon">∞</div>
+        <h3>Principal Parts</h3>
+        <p>Complete six-part reference for all verbs introduced through Lesson 30, grouped by stem type</p>
+        <div class="card-tag">reference</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GRAMMAR ── -->
+  <section class="section" id="grammar">
+    <div class="section-header">
+      <h2>Grammar Notes</h2>
+      <p class="section-sub">Key concepts from Lessons 20–30, straight from the textbook</p>
+    </div>
+
+    <div class="accordion-list" id="grammarAccordion">
+
+      <!-- L20 -->
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <span class="acc-num">L20</span>
+          <span class="acc-title">Perfect &amp; Pluperfect Active Indicative</span>
+          <span class="acc-arrow">›</span>
+        </button>
+        <div class="accordion-body">
+          <h4>Aspect</h4>
+          <p>Both perfect and pluperfect have <strong>perfective aspect</strong>: the action is already completed. The <strong>perfect</strong> describes a present state resulting from a completed action ("I have won" → I am now a winner). The <strong>pluperfect</strong> describes a past state resulting from a completed action ("I had won").</p>
+
+          <h4>Reduplication</h4>
+          <p>The perfect stem is formed by <em>reduplicating</em> (doubling a sound at the start) the basic stem:</p>
+          <ul class="grammar-list">
+            <li><strong>Rule 1 (single consonant or stop + liquid/nasal):</strong> Prefix = initial consonant + ε. E.g., παιδεύω → <em>πε</em>-παιδευκα. If the consonant is aspirated (φ, θ, χ), use the corresponding smooth stop: θύω → <em>τε</em>-θυκα (not θε-).</li>
+            <li><strong>Rule 2 (all other cases):</strong> Augment the stem as you would for the aorist. Vowel-initial stems lengthen; stems beginning with ρ double it; stems beginning with ζ or double consonant add ε-.</li>
+          </ul>
+
+          <h4>The κ of the Perfect</h4>
+          <p>The letter <strong>κ</strong> is characteristic of the perfect active. Verbs whose stems end in a labial or palatal lose the κ (second perfects). A verb with both types usually differs in meaning: e.g., πέπεικα "I have persuaded" vs. πέποιθα "I trust."</p>
+
+          <div class="gram-box">
+            <div class="gram-box-label">Key Endings</div>
+            <table class="mini-table">
+              <tr><th></th><th>Perfect Act.</th><th>Pluperfect Act.</th></tr>
+              <tr><td>1sg</td><td>-[κ]α</td><td>-[κ]η</td></tr>
+              <tr><td>2sg</td><td>-[κ]ας</td><td>-[κ]ης</td></tr>
+              <tr><td>3sg</td><td>-[κ]ε(ν)</td><td>-[κ]ει(ν)</td></tr>
+              <tr><td>1pl</td><td>-[κ]αμεν</td><td>-[κ]εμεν</td></tr>
+              <tr><td>2pl</td><td>-[κ]ατε</td><td>-[κ]ετε</td></tr>
+              <tr><td>3pl</td><td>-[κ]ᾱσι(ν)</td><td>-[κ]εσαν</td></tr>
+              <tr><td>Infinitive</td><td colspan="2">-[κ]έναι (accent persistent on penult)</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- L21 -->
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <span class="acc-num">L21</span>
+          <span class="acc-title">Interrogative τίς &amp; Indefinite τις</span>
+          <span class="acc-arrow">›</span>
+        </button>
+        <div class="accordion-body">
+          <h4>Interrogative τίς ("who? what? which?")</h4>
+          <p>Uses third-declension endings. The accent stays <strong>acute forever</strong>, even where it should become grave (e.g., τίς ἵππος, not τὶς ἵππος). The neuter singular accusative τί used as an adverb means <strong>"why?"</strong>.</p>
+
+          <h4>Indefinite τις ("someone, something, a/an, some, any")</h4>
+          <p>Same forms as interrogative τίς but is an <strong>enclitic</strong> — it prefers to come just <em>after</em> the word it qualifies. The contracted forms <strong>του</strong> (= τινός gen.) and <strong>τῳ</strong> (= τινί dat.) look like the definite article's gen./dat. masculine/neuter singular.</p>
+
+          <h4>Possessive Adjectives</h4>
+          <div class="gram-box">
+            <table class="mini-table">
+              <tr><th>Form</th><th>Meaning</th></tr>
+              <tr><td>ἐμός, -ή, -όν</td><td>my, mine, my own</td></tr>
+              <tr><td>ἡμέτερος, -α, -ον</td><td>our, ours, our own</td></tr>
+              <tr><td>σός, σή, σόν</td><td>your (sg.), yours</td></tr>
+              <tr><td>ὑμέτερος, -α, -ον</td><td>your (pl.), yours</td></tr>
+            </table>
+          </div>
+          <p>In <strong>attributive position</strong> → "my book / my own book." In <strong>predicate position</strong> → "a book of mine / the book is mine."</p>
+        </div>
+      </div>
+
+      <!-- L22 -->
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <span class="acc-num">L22</span>
+          <span class="acc-title">Perfect &amp; Pluperfect Middle/Passive</span>
+          <span class="acc-arrow">›</span>
+        </button>
+        <div class="accordion-body">
+          <h4>Vowel-Stem Verbs</h4>
+          <p>Drop the κ from the perfect active stem → add primary M/P endings (-μαι, -σαι, -ται, -μεθα, -σθε, -νται) with <strong>no thematic vowel</strong>. Infinitive ends in <strong>-σθαι</strong>.</p>
+
+          <h4>Consonant-Stem Verbs: Euphonic Changes</h4>
+          <p>The consonant at the end of the perfect M/P stem changes depending on what ending follows it:</p>
+          <div class="gram-box">
+            <table class="mini-table">
+              <tr><th>Before</th><th>Labial</th><th>Palatal</th><th>Dental/ζ</th><th>λ/ρ</th></tr>
+              <tr><td>μ (-μαι, -μεθα)</td><td>μμ</td><td>γμ</td><td>σμ</td><td>λμ/ρμ</td></tr>
+              <tr><td>σ (-σαι, -σο)</td><td>ψ</td><td>ξ</td><td>σ</td><td>λσ/ρσ/νσ</td></tr>
+              <tr><td>σθ (-σθε, -σθαι)</td><td>φθ</td><td>χθ</td><td>σθ</td><td>λθ/ρθ/νθ</td></tr>
+              <tr><td>τ (-ται, -το)</td><td>πτ</td><td>κτ</td><td>στ</td><td>λτ/ρτ/ντ</td></tr>
+            </table>
+          </div>
+          <p><strong>3rd plural:</strong> Consonant-stem verbs use a <em>periphrastic</em> construction: perfect M/P participle + εἰσί(ν) for perfect; + ἦσαν for pluperfect.</p>
+
+          <h4>Dative of Personal Agent</h4>
+          <p>With perfect and pluperfect <em>passive</em> verbs, use a simple dative (no preposition) for the person responsible: ἐμοί τοῦτο πέπρακται = "This has been done by me."</p>
+        </div>
+      </div>
+
+      <!-- L23 -->
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <span class="acc-num">L23</span>
+          <span class="acc-title">Relative Pronouns · πᾶς · Expressions of Time</span>
+          <span class="acc-arrow">›</span>
+        </button>
+        <div class="accordion-body">
+          <h4>Relative Pronoun ὅς, ἥ, ὅ</h4>
+          <p>Looks like the definite article with the initial τ dropped and rough breathing added. A relative pronoun <strong>agrees in gender and number with its antecedent</strong> but its <strong>case is determined by its function</strong> inside the relative clause.</p>
+          <p>The antecedent may come before or after the relative clause; a demonstrative often serves as antecedent; the antecedent can be omitted entirely.</p>
+
+          <h4>πᾶς, πᾶσα, πᾶν ("all, every, whole")</h4>
+          <div class="gram-box">
+            <table class="mini-table">
+              <tr><th>Position</th><th>Translation</th><th>Example</th></tr>
+              <tr><td>Predicate + noun with article</td><td>"all the ___"</td><td>πᾶσα ἡ τριήρης</td></tr>
+              <tr><td>Predicate + noun without article</td><td>"every ___"</td><td>τριήρης πᾶσα</td></tr>
+              <tr><td>Attributive position</td><td>"the whole ___"</td><td>ἡ πᾶσα τριήρης</td></tr>
+              <tr><td>Substantive</td><td>"everyone/all"</td><td>πᾶς, πάντες, πάντα</td></tr>
+            </table>
+          </div>
+
+          <h4>Expressions of Time</h4>
+          <ul class="grammar-list">
+            <li><strong>Genitive of time within which:</strong> action occurs at some point inside the period (ταύτης τῆς ἡμέρας "during that day")</li>
+            <li><strong>Dative of time when:</strong> dates the action as a single point (ταύτῃ τῇ ἡμέρᾳ "on that day")</li>
+            <li><strong>Accusative of extent of time:</strong> action extends throughout the period (πολλὰς ἡμέρας "for many days")</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- L24 -->
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <span class="acc-num">L24</span>
+          <span class="acc-title">Active Participles (all tenses)</span>
+          <span class="acc-arrow">›</span>
+        </button>
+        <div class="accordion-body">
+          <h4>What is a Participle?</h4>
+          <p>A <strong>verbal adjective</strong>: it has tense and voice (like a verb), and agrees in gender, number, and case with a noun (like an adjective). Participles are <strong>never augmented</strong>.</p>
+
+          <h4>Aspect of Active Participles</h4>
+          <div class="gram-box">
+            <table class="mini-table">
+              <tr><th>Tense</th><th>Aspect</th><th>Relative Time</th></tr>
+              <tr><td>Present</td><td>imperfective</td><td>contemporaneous with main verb</td></tr>
+              <tr><td>Aorist</td><td>aoristic</td><td>prior to main verb</td></tr>
+              <tr><td>Perfect</td><td>perfective</td><td>state contemporaneous; action completed earlier</td></tr>
+              <tr><td>Future</td><td>intended/expected</td><td>after main verb; often expresses purpose</td></tr>
+            </table>
+          </div>
+
+          <h4>Three Uses of the Participle</h4>
+          <ul class="grammar-list">
+            <li><strong>Attributive:</strong> in attributive position; characterizes a noun like a relative clause. "the slave who leads..."</li>
+            <li><strong>Circumstantial:</strong> in predicate position; describes circumstances (temporal, causal, concessive, conditional). Particles καίπερ (although), ἅτε (because), ὡς (as if) clarify the relationship.</li>
+            <li><strong>Supplementary:</strong> completes the idea of the main verb (introduced in L25). Essential to the sentence's meaning.</li>
+          </ul>
+
+          <h4>Suffix Patterns</h4>
+          <div class="gram-box">
+            <table class="mini-table">
+              <tr><th>Tense</th><th>M/N suffix</th><th>F suffix</th><th>Accent</th></tr>
+              <tr><td>Present/Future/2nd Aor.</td><td>-οντ-</td><td>-ουσ-</td><td>on stem syllable</td></tr>
+              <tr><td>1st Aorist</td><td>-σαντ-</td><td>-σᾱσ-</td><td>on stem syllable</td></tr>
+              <tr><td>Perfect</td><td>-οτ-</td><td>-υι-</td><td>on suffix itself</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- L25 -->
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <span class="acc-num">L25</span>
+          <span class="acc-title">Middle/Passive Participles · Supplementary Participles</span>
+          <span class="acc-arrow">›</span>
+        </button>
+        <div class="accordion-body">
+          <h4>M/P Participle Formation</h4>
+          <p>All middle/passive &amp; middle participles share the suffix <strong>-μεν-</strong> and take regular <strong>-ος, -η, -ον</strong> endings. They differ only in their stems.</p>
+          <div class="gram-box">
+            <table class="mini-table">
+              <tr><th>Tense</th><th>Characteristic</th></tr>
+              <tr><td>Present M/P</td><td>-ομεν- (thematic vowel + μεν)</td></tr>
+              <tr><td>Future Middle</td><td>-σομεν-</td></tr>
+              <tr><td>1st Aor. Middle</td><td>-σαμεν-</td></tr>
+              <tr><td>2nd Aor. Middle</td><td>-ομεν- (on 2nd aor. stem)</td></tr>
+              <tr><td>Perfect M/P</td><td>-μέν- (accent on suffix)</td></tr>
+            </table>
+          </div>
+
+          <h4>Supplementary Participles</h4>
+          <p>Used with verbs like <strong>παύω</strong> ("stop/cease") and verbs of emotion like <strong>χαίρω</strong>:</p>
+          <ul class="grammar-list">
+            <li>παύω αὐτοὺς γράφοντας = "I stop them from writing" (participle modifies object)</li>
+            <li>παύομαι γράφων = "I cease writing" (participle modifies subject)</li>
+            <li>χαίρω γράφουσα = "I take delight in writing"</li>
+          </ul>
+          <p>Periphrastic forms: Perfect M/P participle + εἰσί / ἦσαν = 3rd pl. perfect/pluperfect M/P of consonant-stem verbs.</p>
+        </div>
+      </div>
+
+      <!-- L26 -->
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <span class="acc-num">L26</span>
+          <span class="acc-title">Direct &amp; Indirect Questions · Alternative Questions</span>
+          <span class="acc-arrow">›</span>
+        </button>
+        <div class="accordion-body">
+          <h4>Interrogative Particles</h4>
+          <div class="gram-box">
+            <table class="mini-table">
+              <tr><th>Particle</th><th>Function</th></tr>
+              <tr><td>ἆρα (ἆρ')</td><td>general question marker</td></tr>
+              <tr><td>ἆρ᾽ οὐ / οὐκοῦν</td><td>expects "YES"</td></tr>
+              <tr><td>ἆρα μή / μῶν / μή</td><td>expects "NO"</td></tr>
+            </table>
+          </div>
+
+          <h4>Indirect Questions — Rules</h4>
+          <ol class="grammar-list">
+            <li>Retain the same <strong>mood and tense</strong> as the direct question (Greek doesn't shift tense like English).</li>
+            <li>Adjust person as needed (1st/2nd person → 3rd person).</li>
+            <li>If no interrogative word: add εἰ ("whether") at the start.</li>
+            <li>τίς → ὅστις; π-adverbs → ὁπ- adverbs (ποῦ → ὅπου; πῶς → ὅπως, etc.).</li>
+          </ol>
+
+          <h4>Alternative Questions</h4>
+          <ul class="grammar-list">
+            <li><strong>Direct:</strong> πότερον … ἤ ("either … or")</li>
+            <li><strong>Indirect:</strong> εἴτε … εἴτε ("whether … or")</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- L27 -->
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <span class="acc-num">L27</span>
+          <span class="acc-title">Aorist Passive Tense</span>
+          <span class="acc-arrow">›</span>
+        </button>
+        <div class="accordion-body">
+          <h4>Formation</h4>
+          <p>Built on the 6th principal part. Suffix is <strong>-θη- / -θε-</strong> (1st aorist passive) or <strong>-η- / -ε-</strong> (2nd aorist passive, no θ). Uses <strong>secondary ACTIVE endings</strong> (-ν, -ς, —, -μεν, -τε, -σαν) — defying logic!</p>
+
+          <h4>Consonant Changes Before -θη-</h4>
+          <ul class="grammar-list">
+            <li>Dental drops + σ added: πείθω → ἐπείσθην</li>
+            <li>Labial (β/π) roughens to φ: πέμπω → ἐπέμφθην</li>
+            <li>Palatal (γ/κ) roughens to χ: διώκω → ἐδιώχθην</li>
+            <li>θ before -θη- changes to τ: θύω → ἐτύθην (not ἐθύθην)</li>
+            <li>Contract verbs lengthen: α,ε → η; ο → ω</li>
+          </ul>
+
+          <h4>Key Note</h4>
+          <p>A verb with a <strong>2nd aorist active</strong> always has a <strong>1st aorist passive</strong> (e.g., λείπω: 2nd aor. act. ἔλιπον → 1st aor. pass. ἐλείφθην).</p>
+        </div>
+      </div>
+
+      <!-- L28 -->
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <span class="acc-num">L28</span>
+          <span class="acc-title">Future Passive · Future Perfect · οἶδα</span>
+          <span class="acc-arrow">›</span>
+        </button>
+        <div class="accordion-body">
+          <h4>Future Passive</h4>
+          <p>Same stem as aorist passive (no augment) + <strong>σ + thematic vowel + primary passive endings</strong>. E.g., παιδευθήσομαι "I shall be taught."</p>
+
+          <h4>Future Perfect</h4>
+          <p>Usually <strong>periphrastic</strong>: future of εἰμί + perfect active or M/P participle. Rare exception: ἀποθνῄσκω → τεθνήξω "I shall be dead."</p>
+
+          <h4>οἶδα "I know"</h4>
+          <p>Always active in meaning; uses perfect-tense forms as a present, pluperfect as imperfect. Literally "I have seen." Key forms to memorize:</p>
+          <div class="gram-box">
+            <table class="mini-table">
+              <tr><th></th><th>Perfect (= present)</th><th>Pluperfect (= imperfect)</th></tr>
+              <tr><td>1sg</td><td>οἶδα</td><td>ᾔδη</td></tr>
+              <tr><td>2sg</td><td>οἶσθα</td><td>ᾔδησθα</td></tr>
+              <tr><td>3sg</td><td>οἶδε(ν)</td><td>ᾔδει(ν)</td></tr>
+              <tr><td>1pl</td><td>ἴσμεν</td><td>ᾖσμεν</td></tr>
+              <tr><td>2pl</td><td>ἴστε</td><td>ᾖστε</td></tr>
+              <tr><td>3pl</td><td>ἴσᾱσι(ν)</td><td>ᾖσαν</td></tr>
+              <tr><td>Inf.</td><td colspan="2">εἰδέναι</td></tr>
+              <tr><td>Ptcple.</td><td colspan="2">εἰδώς, εἰδυῖα, εἰδός ("knowing")</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- L29 -->
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <span class="acc-num">L29</span>
+          <span class="acc-title">3rd Declension: Vowel Stems &amp; Syncopated Stems</span>
+          <span class="acc-arrow">›</span>
+        </button>
+        <div class="accordion-body">
+          <h4>Vowel-Stem Nouns (ι, υ, ευ)</h4>
+          <p>In ι- and υ-stem nouns, quantitative metathesis occurs: η becomes short and ο becomes long in gen. sg. (πόλη-ος → πόλεως). The accent stays on the original syllable despite the shift.</p>
+          <div class="gram-box">
+            <table class="mini-table">
+              <tr><th></th><th>πόλις (ι-stem)</th><th>βασιλεύς (ευ-stem)</th></tr>
+              <tr><td>Nom. sg.</td><td>πόλις</td><td>βασιλεύς</td></tr>
+              <tr><td>Gen. sg.</td><td>πόλεως</td><td>βασιλέως</td></tr>
+              <tr><td>Dat. sg.</td><td>πόλει</td><td>βασιλεῖ</td></tr>
+              <tr><td>Acc. sg.</td><td>πόλιν</td><td>βασιλέᾱ</td></tr>
+              <tr><td>Voc. sg.</td><td>πόλι</td><td>βασιλεῦ</td></tr>
+              <tr><td>Nom. pl.</td><td>πόλεις</td><td>βασιλεῖς / βασιλέες</td></tr>
+              <tr><td>Gen. pl.</td><td>πόλεων</td><td>βασιλέων</td></tr>
+            </table>
+          </div>
+
+          <h4>Syncopated Stems (πατήρ, μήτηρ, θυγάτηρ)</h4>
+          <p>The stem-vowel disappears in certain forms. Rules: nom. sg. = lengthened stem (-ηρ); voc. sg. = recessive accent; gen./dat. sg. and dat. pl. = syncopated stem (-ρ, with α inserted before σι in dat. pl.).</p>
+        </div>
+      </div>
+
+      <!-- L30 -->
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          <span class="acc-num">L30</span>
+          <span class="acc-title">Deponents · Genitive Absolute · εἷς · οὐδείς</span>
+          <span class="acc-arrow">›</span>
+        </button>
+        <div class="accordion-body">
+          <h4>Deponent Verbs</h4>
+          <p>Verbs whose form is always middle/passive but whose meaning is always active. <strong>Middle deponent:</strong> has aorist middle (e.g., ἀφικνέομαι → ἀφῑκόμην). <strong>Passive deponent:</strong> has aorist passive (e.g., βούλομαι → ἐβουλήθην).</p>
+
+          <h4>Genitive Absolute</h4>
+          <p>A circumstantial participle + a noun/pronoun in the <strong>genitive case</strong>, where that noun/pronoun has <em>no grammatical role</em> in the main clause. It floats alongside the main clause expressing time, cause, concession, condition, etc.</p>
+          <div class="gram-box">
+            <p><em>τοῦ οἰκέτου ἀνοίγοντος τὴν θύραν, τὸν θησαυρὸν ὄψομαι.</em><br/>
+            "When the servant opens the door, I shall see the treasure."</p>
+          </div>
+          <p>Clarifying particles (καίπερ, ἅτε, ὡς) may precede the participle. Subordinating conjunctions (ἐπεί, ἕως, ὅτι) are never used.</p>
+
+          <h4>εἷς, μία, ἕν ("one")</h4>
+          <p>Mixed declension (3rd for M/N, 1st for F). Accent jumps to ultima in gen. and dat. of all genders. <strong>οὐδείς / μηδείς</strong> = "no one, nothing" (compound of οὐδέ/μηδέ + εἷς). Double negatives: if compound comes first, the second negative strengthens it; if compound follows οὐ/μή, they cancel to a positive.</p>
+        </div>
+      </div>
+
+    </div><!-- end accordion -->
+  </section>
+
+  <!-- ── VOCABULARY ── -->
+  <section class="section" id="vocab">
+    <div class="section-header">
+      <h2>Vocabulary</h2>
+      <p class="section-sub">All new words from Lessons 20–30</p>
+    </div>
+
+    <div class="vocab-controls">
+      <input type="text" class="vocab-search" id="vocabSearch" placeholder="Search Greek or English…"/>
+      <select class="vocab-filter" id="vocabLesson">
+        <option value="all">All Lessons</option>
+        <option value="20">Lesson 20</option>
+        <option value="21">Lesson 21</option>
+        <option value="22">Lesson 22</option>
+        <option value="23">Lesson 23</option>
+        <option value="24">Lesson 24</option>
+        <option value="25">Lesson 25</option>
+        <option value="26">Lesson 26</option>
+        <option value="27">Lesson 27</option>
+        <option value="28">Lesson 28</option>
+        <option value="29">Lesson 29</option>
+        <option value="30">Lesson 30</option>
+      </select>
+      <select class="vocab-filter" id="vocabPOS">
+        <option value="all">All Parts of Speech</option>
+        <option value="verb">Verbs</option>
+        <option value="noun">Nouns</option>
+        <option value="adj">Adjectives</option>
+        <option value="pron">Pronouns</option>
+        <option value="adv">Adverbs/Particles</option>
+        <option value="prep">Prepositions</option>
+        <option value="conj">Conjunctions</option>
+      </select>
+    </div>
+
+    <div class="vocab-table-wrap">
+      <table class="vocab-table" id="vocabTable">
+        <thead>
+          <tr><th>Greek</th><th>POS</th><th>English</th><th>Lesson</th><th>Note</th></tr>
+        </thead>
+        <tbody id="vocabBody">
+          <!-- filled by JS -->
+        </tbody>
+      </table>
+    </div>
+    <div class="vocab-count" id="vocabCount"></div>
+  </section>
+
+  <!-- ── FLASHCARDS ── -->
+  <section class="section" id="flashcards">
+    <div class="section-header">
+      <h2>Flashcards</h2>
+      <p class="section-sub">Click to flip · Navigate with arrows · Track your progress</p>
+    </div>
+
+    <div class="fc-controls">
+      <select class="vocab-filter" id="fcDeck">
+        <option value="vocab">Vocabulary</option>
+        <option value="grammar">Grammar Forms</option>
+        <option value="principal">Principal Parts</option>
+      </select>
+      <button class="btn-secondary" id="fcShuffle">⇌ Shuffle</button>
+      <button class="btn-secondary" id="fcReset">↺ Reset</button>
+    </div>
+
+    <div class="fc-arena">
+      <button class="fc-nav" id="fcPrev">‹</button>
+      <div class="fc-card" id="fcCard">
+        <div class="fc-inner" id="fcInner">
+          <div class="fc-front">
+            <div class="fc-hint">Greek</div>
+            <div class="fc-word" id="fcFrontText"></div>
+            <div class="fc-sub" id="fcFrontSub"></div>
+          </div>
+          <div class="fc-back">
+            <div class="fc-hint">English</div>
+            <div class="fc-word" id="fcBackText"></div>
+            <div class="fc-sub" id="fcBackSub"></div>
+          </div>
+        </div>
+      </div>
+      <button class="fc-nav" id="fcNext">›</button>
+    </div>
+
+    <div class="fc-footer">
+      <div class="fc-counter" id="fcCounter">1 / 1</div>
+      <div class="fc-rating">
+        <button class="rating-btn bad" id="rateBad">✗ Hard</button>
+        <button class="rating-btn ok" id="rateOk">~ OK</button>
+        <button class="rating-btn good" id="rateGood">✓ Easy</button>
+      </div>
+    </div>
+
+    <div class="fc-progress-row">
+      <span class="fc-stat hard-stat">Hard: <b id="statHard">0</b></span>
+      <span class="fc-stat ok-stat">OK: <b id="statOk">0</b></span>
+      <span class="fc-stat good-stat">Easy: <b id="statGood">0</b></span>
+    </div>
+  </section>
+
+  <!-- ── QUIZ ── -->
+  <section class="section" id="quiz">
+    <div class="section-header">
+      <h2>Quiz</h2>
+      <p class="section-sub">Test your knowledge of vocabulary and grammar</p>
+    </div>
+
+    <div class="quiz-setup" id="quizSetup">
+      <h3>Choose a Quiz Type</h3>
+      <div class="quiz-type-grid">
+        <button class="quiz-type-btn" data-type="vocab-mc">
+          <span class="qt-icon">λ</span>
+          <span class="qt-name">Vocabulary</span>
+          <span class="qt-desc">Multiple choice: Greek → English</span>
+        </button>
+        <button class="quiz-type-btn" data-type="vocab-rev">
+          <span class="qt-icon">λ</span>
+          <span class="qt-name">Vocab (Reversed)</span>
+          <span class="qt-desc">Multiple choice: English → Greek</span>
+        </button>
+        <button class="quiz-type-btn" data-type="grammar-mc">
+          <span class="qt-icon">§</span>
+          <span class="qt-name">Grammar Rules</span>
+          <span class="qt-desc">Multiple choice on grammar concepts</span>
+        </button>
+        <button class="quiz-type-btn" data-type="forms">
+          <span class="qt-icon">π</span>
+          <span class="qt-name">Verb Forms</span>
+          <span class="qt-desc">Identify tense, voice, person of forms</span>
+        </button>
+      </div>
+      <div class="quiz-num-wrap">
+        <label>Number of questions:</label>
+        <select id="quizNum">
+          <option value="5">5</option>
+          <option value="10" selected>10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+        </select>
+      </div>
+      <button class="btn-primary" id="startQuiz">Begin Quiz</button>
+    </div>
+
+    <div class="quiz-arena" id="quizArena" style="display:none">
+      <div class="quiz-top">
+        <span class="quiz-progress-label" id="quizProgressLabel">Question 1 / 10</span>
+        <div class="quiz-prog-bar"><div class="quiz-prog-fill" id="quizProgFill"></div></div>
+        <span class="quiz-score-label">Score: <b id="quizScore">0</b></span>
+      </div>
+      <div class="quiz-question-card">
+        <div class="quiz-q-num" id="quizQNum"></div>
+        <div class="quiz-question" id="quizQuestion"></div>
+        <div class="quiz-options" id="quizOptions"></div>
+        <div class="quiz-feedback" id="quizFeedback"></div>
+      </div>
+      <button class="btn-primary" id="quizNext" style="display:none">Next →</button>
+    </div>
+
+    <div class="quiz-results" id="quizResults" style="display:none">
+      <div class="results-icon" id="resultsIcon"></div>
+      <h3 id="resultsTitle"></h3>
+      <div class="results-score" id="resultsScore"></div>
+      <div class="results-breakdown" id="resultsBreakdown"></div>
+      <button class="btn-primary" id="quizRetry">Try Again</button>
+      <button class="btn-secondary" id="quizNewType">Choose Different Quiz</button>
+    </div>
+  </section>
+
+  <!-- ── PARADIGMS ── -->
+  <section class="section" id="paradigms">
+    <div class="section-header">
+      <h2>Paradigm Tables</h2>
+      <p class="section-sub">Full conjugation and declension reference</p>
+    </div>
+
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="perfect-active">Perfect Active</button>
+      <button class="tab-btn" data-tab="perfect-mp">Perfect M/P</button>
+      <button class="tab-btn" data-tab="participles">Participles</button>
+      <button class="tab-btn" data-tab="pronouns">Pronouns</button>
+      <button class="tab-btn" data-tab="nouns">Nouns</button>
+    </div>
+
+    <div class="tab-content active" id="tab-perfect-active">
+      <h3>Perfect Active Indicative — παιδεύω</h3>
+      <table class="paradigm-table">
+        <thead><tr><th></th><th>Singular</th><th>Plural</th></tr></thead>
+        <tbody>
+          <tr><td>1st</td><td>πεπαίδευκα</td><td>πεπαιδεύκαμεν</td></tr>
+          <tr><td>2nd</td><td>πεπαίδευκας</td><td>πεπαιδεύκατε</td></tr>
+          <tr><td>3rd</td><td>πεπαίδευκε(ν)</td><td>πεπαιδεύκᾱσι(ν)</td></tr>
+        </tbody>
+      </table>
+      <p class="paradigm-note">Infinitive: πεπαιδευκέναι · Accent persistent on penult.</p>
+
+      <h3 style="margin-top:2rem">Pluperfect Active Indicative — παιδεύω</h3>
+      <table class="paradigm-table">
+        <thead><tr><th></th><th>Singular</th><th>Plural</th></tr></thead>
+        <tbody>
+          <tr><td>1st</td><td>ἐπεπαιδεύκη</td><td>ἐπεπαιδεύκεμεν</td></tr>
+          <tr><td>2nd</td><td>ἐπεπαιδεύκης</td><td>ἐπεπαιδεύκετε</td></tr>
+          <tr><td>3rd</td><td>ἐπεπαιδεύκει(ν)</td><td>ἐπεπαιδεύκεσαν</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tab-content" id="tab-perfect-mp">
+      <h3>Perfect Middle/Passive Indicative — παιδεύω</h3>
+      <table class="paradigm-table">
+        <thead><tr><th></th><th>Singular</th><th>Plural</th></tr></thead>
+        <tbody>
+          <tr><td>1st</td><td>πεπαίδευμαι</td><td>πεπαιδεύμεθα</td></tr>
+          <tr><td>2nd</td><td>πεπαίδευσαι</td><td>πεπαίδευσθε</td></tr>
+          <tr><td>3rd</td><td>πεπαίδευται</td><td>πεπαιδευμένοι εἰσί(ν)*</td></tr>
+        </tbody>
+      </table>
+      <p class="paradigm-note">Infinitive: πεπαιδεύσθαι · *3rd pl. uses periphrastic for consonant stems.</p>
+
+      <h3 style="margin-top:2rem">Pluperfect Middle/Passive — παιδεύω</h3>
+      <table class="paradigm-table">
+        <thead><tr><th></th><th>Singular</th><th>Plural</th></tr></thead>
+        <tbody>
+          <tr><td>1st</td><td>ἐπεπαιδευμήν</td><td>ἐπεπαιδεύμεθα</td></tr>
+          <tr><td>2nd</td><td>ἐπεπαίδευσο</td><td>ἐπεπαίδευσθε</td></tr>
+          <tr><td>3rd</td><td>ἐπεπαίδευτο</td><td>πεπαιδευμένοι ἦσαν*</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tab-content" id="tab-participles">
+      <h3>Present Active Participle — παιδεύω ("teaching")</h3>
+      <table class="paradigm-table">
+        <thead><tr><th>Case</th><th>Masc.</th><th>Fem.</th><th>Neut.</th></tr></thead>
+        <tbody>
+          <tr><td>Nom/Voc</td><td>παιδεύων</td><td>παιδεύουσα</td><td>παιδεῦον</td></tr>
+          <tr><td>Gen.</td><td>παιδεύοντος</td><td>παιδευούσης</td><td>παιδεύοντος</td></tr>
+          <tr><td>Dat.</td><td>παιδεύοντι</td><td>παιδευούσῃ</td><td>παιδεύοντι</td></tr>
+          <tr><td>Acc.</td><td>παιδεύοντα</td><td>παιδεύουσαν</td><td>παιδεῦον</td></tr>
+        </tbody>
+      </table>
+      <p class="paradigm-note">Plural: παιδεύοντες / παιδεύουσαι / παιδεύοντα (nom.), etc.</p>
+
+      <h3 style="margin-top:2rem">Present Middle/Passive Participle — παιδεύω ("being taught")</h3>
+      <table class="paradigm-table">
+        <thead><tr><th>Case</th><th>Masc.</th><th>Fem.</th><th>Neut.</th></tr></thead>
+        <tbody>
+          <tr><td>Nom.</td><td>παιδευόμενος</td><td>παιδευομένη</td><td>παιδευόμενον</td></tr>
+          <tr><td>Gen.</td><td>παιδευομένου</td><td>παιδευομένης</td><td>παιδευομένου</td></tr>
+          <tr><td>Dat.</td><td>παιδευομένῳ</td><td>παιδευομένῃ</td><td>παιδευομένῳ</td></tr>
+          <tr><td>Acc.</td><td>παιδευόμενον</td><td>παιδευομένην</td><td>παιδευόμενον</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin-top:2rem">Aorist Passive Participle — παιδεύω ("having been taught")</h3>
+      <table class="paradigm-table">
+        <thead><tr><th>Case</th><th>Masc.</th><th>Fem.</th><th>Neut.</th></tr></thead>
+        <tbody>
+          <tr><td>Nom/Voc</td><td>παιδευθείς</td><td>παιδευθεῖσα</td><td>παιδευθέν</td></tr>
+          <tr><td>Gen.</td><td>παιδευθέντος</td><td>παιδευθείσης</td><td>παιδευθέντος</td></tr>
+          <tr><td>Dat.</td><td>παιδευθέντι</td><td>παιδευθείσῃ</td><td>παιδευθέντι</td></tr>
+          <tr><td>Acc.</td><td>παιδευθέντα</td><td>παιδευθεῖσαν</td><td>παιδευθέν</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tab-content" id="tab-pronouns">
+      <h3>Relative Pronoun ὅς, ἥ, ὅ</h3>
+      <table class="paradigm-table">
+        <thead><tr><th>Case</th><th>M. sg.</th><th>F. sg.</th><th>N. sg.</th><th>M. pl.</th><th>F. pl.</th><th>N. pl.</th></tr></thead>
+        <tbody>
+          <tr><td>Nom.</td><td>ὅς</td><td>ἥ</td><td>ὅ</td><td>οἵ</td><td>αἵ</td><td>ἅ</td></tr>
+          <tr><td>Gen.</td><td>οὗ</td><td>ἧς</td><td>οὗ</td><td>ὧν</td><td>ὧν</td><td>ὧν</td></tr>
+          <tr><td>Dat.</td><td>ᾧ</td><td>ᾗ</td><td>ᾧ</td><td>οἷς</td><td>αἷς</td><td>οἷς</td></tr>
+          <tr><td>Acc.</td><td>ὅν</td><td>ἥν</td><td>ὅ</td><td>οὕς</td><td>ἅς</td><td>ἅ</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin-top:2rem">Interrogative τίς / Indefinite τις</h3>
+      <table class="paradigm-table">
+        <thead><tr><th>Case</th><th>Interr. M/F</th><th>Interr. N.</th><th>Indef. M/F</th><th>Indef. N.</th></tr></thead>
+        <tbody>
+          <tr><td>Nom. sg.</td><td>τίς</td><td>τί</td><td>τις</td><td>τι</td></tr>
+          <tr><td>Gen. sg.</td><td>τίνος (τοῦ)</td><td>τίνος</td><td>τινός (του)</td><td>τινός</td></tr>
+          <tr><td>Dat. sg.</td><td>τίνι (τῷ)</td><td>τίνι</td><td>τινί (τῳ)</td><td>τινί</td></tr>
+          <tr><td>Acc. sg.</td><td>τίνα</td><td>τί</td><td>τινά</td><td>τι</td></tr>
+          <tr><td>Nom. pl.</td><td>τίνες</td><td>τίνα</td><td>τινές</td><td>τινά (ἄττα)</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin-top:2rem">εἷς, μία, ἕν ("one")</h3>
+      <table class="paradigm-table">
+        <thead><tr><th>Case</th><th>Masc.</th><th>Fem.</th><th>Neut.</th></tr></thead>
+        <tbody>
+          <tr><td>Nom.</td><td>εἷς</td><td>μία</td><td>ἕν</td></tr>
+          <tr><td>Gen.</td><td>ἑνός</td><td>μιᾶς</td><td>ἑνός</td></tr>
+          <tr><td>Dat.</td><td>ἑνί</td><td>μιᾷ</td><td>ἑνί</td></tr>
+          <tr><td>Acc.</td><td>ἕνα</td><td>μίαν</td><td>ἕν</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tab-content" id="tab-nouns">
+      <h3>πόλις, -εως, ἡ (ι-stem)</h3>
+      <table class="paradigm-table">
+        <thead><tr><th>Case</th><th>Singular</th><th>Plural</th></tr></thead>
+        <tbody>
+          <tr><td>Nom.</td><td>πόλις</td><td>πόλεις</td></tr>
+          <tr><td>Gen.</td><td>πόλεως</td><td>πόλεων</td></tr>
+          <tr><td>Dat.</td><td>πόλει</td><td>πόλεσι(ν)</td></tr>
+          <tr><td>Acc.</td><td>πόλιν</td><td>πόλεις</td></tr>
+          <tr><td>Voc.</td><td>πόλι</td><td>πόλεις</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin-top:2rem">πατήρ, -τρός, ὁ (syncopated)</h3>
+      <table class="paradigm-table">
+        <thead><tr><th>Case</th><th>Singular</th><th>Plural</th></tr></thead>
+        <tbody>
+          <tr><td>Nom.</td><td>πατήρ</td><td>πατέρες</td></tr>
+          <tr><td>Gen.</td><td>πατρός</td><td>πατέρων</td></tr>
+          <tr><td>Dat.</td><td>πατρί</td><td>πατράσι(ν)</td></tr>
+          <tr><td>Acc.</td><td>πατέρα</td><td>πατέρας</td></tr>
+          <tr><td>Voc.</td><td>πάτερ</td><td>πατέρες</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin-top:2rem">βασιλεύς, -έως, ὁ (ευ-stem)</h3>
+      <table class="paradigm-table">
+        <thead><tr><th>Case</th><th>Singular</th><th>Plural</th></tr></thead>
+        <tbody>
+          <tr><td>Nom.</td><td>βασιλεύς</td><td>βασιλεῖς</td></tr>
+          <tr><td>Gen.</td><td>βασιλέως</td><td>βασιλέων</td></tr>
+          <tr><td>Dat.</td><td>βασιλεῖ</td><td>βασιλεῦσι(ν)</td></tr>
+          <tr><td>Acc.</td><td>βασιλέᾱ</td><td>βασιλέᾱς</td></tr>
+          <tr><td>Voc.</td><td>βασιλεῦ</td><td>βασιλεῖς</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── PRINCIPAL PARTS ── -->
+  <section class="section" id="principal">
+    <div class="section-header">
+      <h2>Principal Parts</h2>
+      <p class="section-sub">All six parts of every verb through Lesson 30</p>
+    </div>
+
+    <div class="vocab-controls">
+      <input type="text" class="vocab-search" id="ppSearch" placeholder="Search verb…"/>
+      <select class="vocab-filter" id="ppFilter">
+        <option value="all">All Stem Types</option>
+        <option value="vowel">Vowel Stem</option>
+        <option value="dental">Dental Stem</option>
+        <option value="liquid">Liquid/Nasal Stem</option>
+        <option value="labial">Labial Stem</option>
+        <option value="palatal">Palatal Stem</option>
+      </select>
+    </div>
+
+    <div class="pp-table-wrap">
+      <table class="vocab-table pp-table" id="ppTable">
+        <thead>
+          <tr>
+            <th>Pres.</th><th>Fut.</th><th>Aor. Act.</th>
+            <th>Perf. Act.</th><th>Perf. M/P</th><th>Aor. Pass.</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+        <tbody id="ppBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
